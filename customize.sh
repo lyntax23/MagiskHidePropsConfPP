@@ -1,6 +1,7 @@
 ##########################################################################################
 # Installation variables and functions for the Magisk module "MagiskHide Props Config"
 # Copyright (c) 2018-2021 Didgeridoohan @ XDA Developers.
+# Copyright (c) 2025 lyntax_ @ XDA Developers
 # Licence: MIT
 ##########################################################################################
 
@@ -27,25 +28,13 @@ mkdir -pv $MHPCPATH
 echo "***************************************************" > $LOGFILE 2>&1
 echo "********* MagiskHide Props Config $MODVERSION ********" >> $LOGFILE 2>&1
 echo "***************** By Didgeridoohan ***************" >> $LOGFILE 2>&1
+echo "***************** Fork by lyntax_  ***************" >> $LOGFILE 2>&1
 echo "***************************************************" >> $LOGFILE 2>&1
 log_print "- Starting module installation script"
+########################
+# Removed MD5 check    #
+########################
 
-# Rudimentary tamper check
-log_handler "Checking module files MD5 checksum."
-unzip -o "$ZIPFILE" 'META-INF/*' -d $MODPATH >> $LOGFILE 2>&1
-cd $MODPATH
-if [ "$(md5sum -c module.md5 | grep FAILED)" ]; then
-  ui_print ""
-  ui_print "!"
-  log_print "! MD5 checksum mismatch!"
-  ui_print "!"
-  ui_print ""
-  ui_print "The module files have been tampered with."
-  ui_print "Only download from official sources."
-  ui_print "See the module documentation for details."
-  ui_print ""
-  abort "! Aborting install!"
-else
   # Module script installation
   script_install
 
@@ -53,9 +42,6 @@ else
   log_print "- Setting permissions"
   set_perm $MODPATH/system/$BIN/props 0 0 0755
 
-  # Cleanup
-  rm -rf $MODPATH/META-INF
-  rm -f $MODPATH/module.md5
 
   log_print "- Module installation complete."
 fi
