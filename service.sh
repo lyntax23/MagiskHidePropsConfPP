@@ -2,6 +2,7 @@
 
 # MagiskHide Props Config
 # Copyright (c) 2018-2021 Didgeridoohan @ XDA Developers
+# Copyright (c) 2025 lyntax_ @ XDA Developers
 # Licence: MIT
 
 MODPATH=${0%/*}
