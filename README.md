@@ -467,19 +467,12 @@ If you've had any help from me or this module, any kind of [donation](https://fo
 @Some_Random_Username @ XDA Developers, for all the OnePlus fingerprints.  
 @Displax @ XDA Developers, for all the prints and the basic attestation workaround.  
 @ipdev @ XDA Developers, for being always helpful, bringing tons of fingerprints to the module list and the [mHideGP script](https://github.com/ipdev99/mHideGP).  
+@lyntax_ @ XDA Developers, (me) for forking this project and making it re-active.
 And of course, everyone that provides fingerprints for me to add to the list. The module wouldn't be the same without you guys. Thank you!
 
 
 ## Previous releases
 Any previous releases can be found on [GitHub](https://github.com/Magisk-Modules-Repo/MagiskHide-Props-Config/releases).
-
-Releases up until v2.4.0 are compatible with Magisk v15 to v16.7.  
-Releases from v2.4.1 are compatible with Magisk v17 to v18.1.  
-Releases from v4.0.0 are compatible with Magisk v19+.  
-Releases from v5.0.0 are recommended for Magisk v19.4+.  
-Releases from v5.2.5 will only install on Magisk v20+.
-Releases from v5.4.0 will only install on Magisk v20.4+.
-
 
 ## Changelog
 ### v6.1.2
