@@ -2,6 +2,7 @@
 
 # MagiskHide Props Config
 # Copyright (c) 2018-2021 Didgeridoohan @ XDA Developers
+# Copyright (c) 2025 lyntax_ @ XDA Developers
 # Licence: MIT
 
 #anch1
@@ -43,6 +44,7 @@
 	echo "***************************************************" > $LOGFILE 2>&1
 	echo "********* MagiskHide Props Config $MODVERSION ********" >> $LOGFILE 2>&1
 	echo "***************** By Didgeridoohan ***************" >> $LOGFILE 2>&1
+	echo "*****************  Fork by lyntax_ ***************" >> $LOGFILE 2>&1
 	echo "***************************************************" >> $LOGFILE 2>&1
 	echo ""
 	STRST="$(date +"%m-%d-%Y %H:%M:%S.%3N") - Log start (regular execution)."
